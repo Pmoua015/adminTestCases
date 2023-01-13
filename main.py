@@ -19,8 +19,8 @@ class AdminTestingCases(unittest.TestCase):
         self.driver.get("https://yorkdevtraining.com/")
         self.driver.implicitly_wait(10)
         self.driver.find_element(By.CLASS_NAME, "mat-button-wrapper").click()
-        Email = ""
-        Password = ""
+        Email = " "
+        Password = " "
         self.driver.find_element("id", "mat-input-0").send_keys(Email)
         self.driver.find_element("id", "mat-input-1").send_keys(Password)
 
